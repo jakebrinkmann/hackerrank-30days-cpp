@@ -18,4 +18,5 @@ To execute the programs:
 1. [Data Types](DataTypes/main.cpp)
 2. [Operators](Operators/main.cpp)
 3. [Intro to Conditional Statements](Condition/main.cpp)
+4. [Class vs. Instance](ClassInstance/)
 
