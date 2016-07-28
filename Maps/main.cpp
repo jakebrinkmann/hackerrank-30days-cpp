@@ -14,8 +14,7 @@ int main(){
         cin >> number;
         phoneBook[name] = number;
     }
-    while (true) {
-        cin >> search;
+    while (cin >> search) {
         if(phoneBook.find(search) != phoneBook.end()){
             cout << search << "=" << phoneBook[search] <<endl;
         } else {
