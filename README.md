@@ -12,6 +12,10 @@ To execute the programs:
 
     ./a.exe
 
+To run a test on the script:
+
+    cat input00 | ./a.exe | diff output00 -
+
 ## Table of Contents
 
 0. [Hello, World](HelloWorld/main.cpp)
