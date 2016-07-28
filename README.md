@@ -22,4 +22,5 @@ To execute the programs:
 5. [Loops](Loops/)
 6. [Review](Review/)
 7. [Arrays](Arrays/)
+8. [Dictionaries and Maps](Maps/)
 
