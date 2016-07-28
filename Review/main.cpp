@@ -11,8 +11,10 @@ int main(){
         cin >> S;
         N = S.length();
         for(int j=0; j<2; j++){
-            for(int k=0; k<N/2; k++){
+            int k = 0;
+            while((k*2)+j<N){
                 cout << S[(k*2)+j];
+                k++;
             }
             cout << " ";
         }
