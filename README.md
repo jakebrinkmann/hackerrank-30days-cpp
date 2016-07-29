@@ -28,4 +28,5 @@ To run a test on the script:
 7. [Arrays](Arrays/)
 8. [Dictionaries and Maps](Maps/)
 9. [Recursion](Recursion/)
+10. [Binary Numbers](Binary/)
 
