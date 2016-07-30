@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<climits>
 #define WIDTH 6
 #define HEIGHT 6
 using namespace std;
@@ -25,7 +26,7 @@ int main(){
     //      a b c
     //        d
     //      e f g
-    int maxSum = 0;
+    int maxSum = INT_MIN;
     for(int arr_x=0; arr_x<WIDTH-2; arr_x++){
         for(int arr_y=0; arr_y<HEIGHT-2; arr_y++){
             int thisSum = 0;
