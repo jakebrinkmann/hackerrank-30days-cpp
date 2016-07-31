@@ -25,9 +25,36 @@ class Student :  public Person{
 	private:
 		vector<int> testScores;
 	public:
-  		// Write your constructor
-
-  		// Write char calculate()
+  		Student(string firstName, string lastName, int id, vector<int> scores)
+            : Person(firstName, lastName, id){
+            this->testScores = scores;
+        };
+        char calculate(){
+            int N = this->testScores.size();
+            int summed = 0;
+            for(int i=0; i<N; i++){
+                summed += this->testScores[i];
+            }
+            int average;
+            average = summed / N;
+            string grades = "OEAPDT";
+            if(average > 89){
+                return grades[0];
+            }
+            if(average > 79){
+                return grades[1];
+            }
+            if(average > 69){
+                return grades[2];
+            }
+            if(average > 54){
+                return grades[3];
+            }
+            if(average > 39){
+                return grades[4];
+            }
+            return grades[5];
+        }
 };
 
 int main() {
