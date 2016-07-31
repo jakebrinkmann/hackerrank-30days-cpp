@@ -37,3 +37,8 @@ separated integers describes `scores`.
     2
     100 80
 
+## Additional resources
+
+[C++ Friendship and
+Inheritance](http://www.cplusplus.com/doc/tutorial/inheritance/)
+
