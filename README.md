@@ -30,4 +30,5 @@ To run a test on the script:
 9. [Recursion](Recursion/)
 10. [Binary Numbers](Binary/)
 11. [2D Arrays](Arrays-2D/)
+12. [Inheritance](Inheritance/)
 
