@@ -24,8 +24,11 @@ class MyBook : public Book{
     public:
         MyBook(string title, string author, int price) : Book(title, author)
             { this->price = price; };
-        void display(void)
-            { cout << this->title << endl; };
+        void display(void){
+            cout << "Title: " << this->title << endl;
+            cout << "Author: " << this->author << endl;
+            cout << "Price: " << this->price;
+        };
 };
 
 int main() {
