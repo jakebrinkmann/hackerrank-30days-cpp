@@ -32,4 +32,5 @@ To run a test on the script:
 11. [2D Arrays](Arrays-2D/)
 12. [Inheritance](Inheritance/)
 13. [Abstract Classes](Abstract/)
+14. [Scope](Scope/)
 
