@@ -16,13 +16,15 @@ class Difference {
         {this->elements = a;};
     void computeDifference(void) {
         int N=this->elements.size();
+        int maximumDifference = 0;
         for(int i=0; i<N; i++){
             for(int j=0; j<N; j++){
                 int tmpdiff = elements[i] - elements[j];
-                if(tmpdiff>this->maximumDifference)
+                if(tmpdiff>maximumDifference)
                     { maximumDifference=tmpdiff; };
             }
         }
+        this->maximumDifference = maximumDifference;
     }
 }; // End of Difference class
 
