@@ -12,7 +12,12 @@ class Difference {
   
   	public:
   	int maximumDifference;
-    Difference (vector<int> a);
+    Difference(vector<int> a)
+        {this->elements = a;};
+    void computeDifference(void) {
+        int N=this->elements.size();
+        cout<<"N="<<N<<endl;
+    }
 }; // End of Difference class
 
 int main() {
