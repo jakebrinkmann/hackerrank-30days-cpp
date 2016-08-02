@@ -16,7 +16,13 @@ class Difference {
         {this->elements = a;};
     void computeDifference(void) {
         int N=this->elements.size();
-        cout<<"N="<<N<<endl;
+        for(int i=0; i<N; i++){
+            for(int j=0; j<N; j++){
+                int tmpdiff = elements[i] - elements[j];
+                if(tmpdiff>this->maximumDifference)
+                    { maximumDifference=tmpdiff; };
+            }
+        }
     }
 }; // End of Difference class
 
