@@ -12,7 +12,7 @@ class Difference {
   
   	public:
   	int maximumDifference;
-    // Add your code here
+    Difference (vector<int> a);
 }; // End of Difference class
 
 int main() {
