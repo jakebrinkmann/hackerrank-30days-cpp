@@ -13,9 +13,18 @@ class Node
 };
 class Solution{
     public:        
+        Node *t;
       Node* insert(Node *head,int data)
       {
-          //Complete this method
+          Node n = Node(data);
+          cout<<"n.data="<<n.data<<endl;
+          if(head == NULL){
+              cout<<"head==NULL"<<endl;
+              return head;
+          } else {
+              cout<<"head==>next"<<endl;
+              return head;
+          };
       }
       void display(Node *head)
       {
