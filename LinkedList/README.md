@@ -26,3 +26,9 @@ contain an integer to be inserted at the list's tail.
 
     2 3 4 1
 
+## Additional Resources
+
+* [Intro to pointers in C++](https://www.youtube.com/watch?v=h-HBipu_1P0)
+* [Linked Lists Introduction](https://www.youtube.com/watch?v=o5wJkJJpKtM)
+* [Pointers - C++ Tutorial](http://www.cplusplus.com/doc/tutorial/pointers/)
+

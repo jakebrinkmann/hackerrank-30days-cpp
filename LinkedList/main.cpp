@@ -18,8 +18,11 @@ class Solution{
       {
           Node n = Node(data);
           cout<<"n.data="<<n.data<<endl;
+          cout<<"&n="<<&n<<endl;
           if(head == NULL){
               cout<<"head==NULL"<<endl;
+              head->next = n.next;
+              cout<<"head=="<<&n<<endl;
               return head;
           } else {
               cout<<"head==>next"<<endl;
