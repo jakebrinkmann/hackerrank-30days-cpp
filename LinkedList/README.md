@@ -31,4 +31,31 @@ contain an integer to be inserted at the list's tail.
 * [Intro to pointers in C++](https://www.youtube.com/watch?v=h-HBipu_1P0)
 * [Linked Lists Introduction](https://www.youtube.com/watch?v=o5wJkJJpKtM)
 * [Pointers - C++ Tutorial](http://www.cplusplus.com/doc/tutorial/pointers/)
+* [Lesson 15: Singly linked lists in
+  C++](http://www.cprogramming.com/tutorial/lesson15.html)
+
+  In memory it is often described as looking like this:
+        ----------        ----------
+        - Data   -        - Data   -
+        ----------        ----------
+        - Pointer- - - -> - Pointer-
+        ----------        ----------
+
+* [C++ Dynamic
+  Memory](http://www.tutorialspoint.com/cplusplus/cpp_dynamic_memory.htm)
+
+## Lessons Learned
+
+Finally it became apparent that my local variable `n` was being created, and I
+could "point" to it with the `head` pointer. However, since it was only a
+locally defined variable, it was being placed on the **STACK** instead of the
+**HEAP**, which meant that as soon as the function returned, the data was being
+messed with by the operating system (because, it was no longer allocated to my
+program).
+
+The solution was to force `n` to be dynamically allocated at run-time by using
+the `new` keyword. Using `Node* n = new Node(data)` meant that the memory would
+be kept until I explicitly deleted it. This way, when I'm keeping track of the
+pointers to my data, that data would remain in the same place, and any
+subsequent instances would be created in _new_ memory locations... the irony...
 
