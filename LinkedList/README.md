@@ -35,6 +35,7 @@ contain an integer to be inserted at the list's tail.
   C++](http://www.cprogramming.com/tutorial/lesson15.html)
 
   In memory it is often described as looking like this:
+
         ----------        ----------
         - Data   -        - Data   -
         ----------        ----------
