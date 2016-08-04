@@ -15,8 +15,16 @@ class Solution{
     public:        
       Node* insert(Node *head,int data)
       {
-          Node n = Node(data);
-          head = &n;
+          Node* n = new Node(data);
+          if(head==NULL){
+              head = n;
+          } else {
+              Node* p = head;
+              while(p->next != NULL){
+                  p = p->next;
+              }
+              p->next = n;
+          }
           return head;
       }
       void display(Node *head)
