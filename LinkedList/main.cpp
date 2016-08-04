@@ -13,24 +13,31 @@ class Node
 };
 class Solution{
     public:        
-        Node * p= NULL;
+        Node * p;
       Node* insert(Node *head,int data)
       {
           Node n = Node(data);
+          cout<<"----"<<endl;
+          cout<<"head="<<head<<endl;
           cout<<"n.data="<<n.data<<endl;
+          cout<<"n.next="<<n.next<<endl;
           if(head==NULL){
-              head = &n;
               p = &n;
-              return head;
+              return p;
           } else {
-              // need to get prev n.next and point to this n
-              p->next = &n;
+              if(p->next==NULL){
+                  cout<<"p.next="<<p<<endl;
+                  p->next = &n;
+              }
+              cout<<"n.next="<<n.next<<endl;
+              p = &n;
               return head;
           }
       }
       void display(Node *head)
       {
           Node *start=head;
+          cout<<"------display-----------"<<endl;
           while(start)
           {
               cout<<start->data<<" ";
