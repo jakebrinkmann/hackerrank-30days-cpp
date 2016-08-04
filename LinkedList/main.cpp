@@ -18,14 +18,13 @@ class Solution{
       {
           Node* n = NULL;
           n = new Node(data);
-          cout<<"n.data="<<n->data<<endl;
           if(head==NULL){
               head = n;
               p = n;
               return head;
           } else {
-              // need to get prev n.next and point to this n
               p->next = n;
+              p = n;
               return head;
           }
       }
