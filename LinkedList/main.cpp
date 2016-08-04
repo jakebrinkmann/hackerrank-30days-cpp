@@ -16,7 +16,7 @@ class Solution{
         Node * p= NULL;
       Node* insert(Node *head,int data)
       {
-          Node n = Node(data);
+          Node* n = new Node(data);
           cout<<"n.data="<<n.data<<endl;
           if(head==NULL){
               head = &n;
