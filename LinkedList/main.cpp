@@ -13,13 +13,18 @@ class Node
 };
 class Solution{
     public:        
+        Node * p= NULL;
       Node* insert(Node *head,int data)
       {
           Node n = Node(data);
           cout<<"n.data="<<n.data<<endl;
           if(head==NULL){
-              cout<<"HEAD-->NULL"<<endl;
               head = &n;
+              p = &n;
+              return head;
+          } else {
+              // need to get prev n.next and point to this n
+              p->next = &n;
               return head;
           }
       }
