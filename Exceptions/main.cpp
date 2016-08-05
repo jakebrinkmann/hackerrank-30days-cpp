@@ -27,5 +27,7 @@ using namespace std;
 int main(){
     string S;
     cin >> S;
+    int i = stoi(S,10);
+    cout << i;
     return 0;
 }
