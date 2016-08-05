@@ -4,7 +4,16 @@
 #include <exception>
 #include <stdexcept>
 using namespace std;
-//Write your code here
+class Calculator {
+    public: 
+        int power(int n, int p){
+            int temp=1;
+            for(int i=0; i<p; i++){
+                temp *= n;
+            }
+            return temp;
+        }
+};
 int main()
 {
     Calculator myCalculator=Calculator();
