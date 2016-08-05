@@ -20,3 +20,10 @@ throw an exception with the message `n and p should be non-negative`.
     n and p should be non-negative
     n and p should be non-negative
 
+## Additional resources
+
+* [Exceptions - C++
+  tutorials](http://www.cplusplus.com/doc/tutorial/exceptions/)
+* [Const
+  Correctness](http://www.cprogramming.com/tutorial/const_correctness.html)
+

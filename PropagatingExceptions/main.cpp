@@ -4,9 +4,17 @@
 #include <exception>
 #include <stdexcept>
 using namespace std;
+class my_exception : public exception {
+    virtual const char *what() const throw() {
+        return "n and p should be non-negative";
+    }
+};
 class Calculator {
     public: 
         int power(int n, int p){
+            if( (n<0) || (p<0) ) {
+                throw my_exception();
+            }
             int temp=1;
             for(int i=0; i<p; i++){
                 temp *= n;
