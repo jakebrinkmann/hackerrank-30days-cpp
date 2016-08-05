@@ -34,4 +34,5 @@ To run a test on the script:
 13. [Abstract Classes](Abstract/)
 14. [Scope](Scope/)
 15. [Linked List](LinkedList/)
+16. [Exceptions - String to Integer](Exceptions/)
 
