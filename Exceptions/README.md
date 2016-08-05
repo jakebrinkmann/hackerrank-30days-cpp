@@ -16,4 +16,6 @@ integer, pring `Bad String`.
 ## Additional resources
 
 * [C++: stoi(token)](http://www.cplusplus.com/reference/string/stoi/)
+* [Exception Handling in
+  C++](http://www.cprogramming.com/tutorial/exceptions.html)
 
